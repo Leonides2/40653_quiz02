@@ -1,7 +1,12 @@
+import { useContext } from "react";
+import MyContext from "../context/MyContext";
+
 const Stepper = () => {
 
-  const step = 1;
 
+  
+  const step = useContext(MyContext).step;
+  
   return (
     <div className='stepper flex'>
         <h2 className={step == 1 ? 'active' : ''}>1</h2>
