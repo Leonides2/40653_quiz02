@@ -4,10 +4,11 @@ import Stepper from './quiz02/Stepper'
 import Content from './quiz02/Content'
 import { MyProvider } from './context/MyContextProvider'
 import Buttons from './quiz02/Buttons';
+import Product from './quiz02/Product';
 
 function App() {
 
-  let products = [
+  let products: Product[] =[
     { id:1, step:1, name: 'Mouse', price: 60 },
     { id:2, step:1, name: 'Monitor', price: 70 },
     { id:4, step:2, name: 'Keyboard', price: 80 },
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
       <h1>Quiz 02</h1>
-      <MyProvider>
+      <MyProvider product={products}>
        <Stepper/>
 
        <Content/>
