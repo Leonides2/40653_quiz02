@@ -11,7 +11,7 @@ export interface IThemeProviderProps {
  
 
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState(product)
     const [step, setStep] = useState(1)
 
     return (

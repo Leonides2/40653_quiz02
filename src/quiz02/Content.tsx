@@ -9,9 +9,9 @@ const Content = () => {
     <div className='card'>
        {Product.products.map(item=>(
         <>
-          <h2 key={item.id}>{item.name}</h2>
-          <h2 key={item.id}>{item.price}</h2>
-          </>
+          <p key={item.id}>Producto: {item.name}</p>
+          <p key={item.id}>Precio: {item.price}</p>
+        </>
        ))}
     </div>
   )
